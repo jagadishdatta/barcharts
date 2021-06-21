@@ -14,7 +14,9 @@ import {
 function Barcharts() {
   const [employee_name, setemployee_name] = useState("");
   const [year, setyear] = useState("");
-  const [url, seturl] = useState("http://localhost:8000/employerevenue");
+  const [url, seturl] = useState(
+    "http://localhost:8000/employerevenue?year=2021"
+  );
   const [employedata, setemployedata] = useState([]);
   const [getdata, setdata] = useState([]);
   // const d = useDumpdata(url);
